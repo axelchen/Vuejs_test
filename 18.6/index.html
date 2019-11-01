@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>18.1</title>
+   
+</head>
+<body>
+  <div id="app">
+    <label>
+      男
+      <input v-model="sex" value="male" type="checkbox">
+    </label>
+
+    <label>
+      女
+      <input v-model="sex" value="female" type="checkbox">
+    </label>
+
+    <br>
+    {{sex}}
+   
+    <!-- <textarea v-model="article "></textarea> -->
+    <div>where are you from?</div>
+    <select v-model="from">
+      <option value="1">Taipei</option>
+      <option value="2">Taichung</option>
+      <option value="3">Kaohsiung</option>
+    </select>
+    {{from}}
+    <div>Where you want to go? </div>
+    <select v-model="dest" multiple>
+        <option value="1">Taipei</option>
+        <option value="2">Taichung</option>
+        <option value="3">Kaohsiung</option>
+    </select>
+    {{dest}}
+    <script src="../lib/vue.js"></script>
+    <script src="js/main.js"></script>      
+</body>
+</html>
